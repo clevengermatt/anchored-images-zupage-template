@@ -1,32 +1,120 @@
-.App {
-  text-align: center;
+.Body-Text {
+  font-size: 20px;
+  font-family: "Character";
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.Body-Text p:first-child::first-letter {
+  padding: 0 0.3rem;
+  margin: 0.7rem 0.3rem 0 0;
+  font-size: 4rem;
+  float: left;
+  line-height: 0.7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Scrollable {
+  position: relative;
+  height: 100vh;
+  left: 50vw;
+  width: 50vw;
+  overflow: scroll;
 }
 
-.App-link {
-  color: #61dafb;
+.Text-Container {
+  padding: 25px 25px 50px 25px;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Slider {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.Slider-Item {
+  width: 50vw;
+  height: 100vh;
+}
+
+.Slider-Image {
+  width: 50vw;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.Title {
+  font-family: "Crimson Text", serif;
+  font-size: 3.5vw;
+  line-height: 3.5vw;
+}
+
+.Avatar {
+  height: 60px;
+  width: 60px;
+}
+
+.Creator {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.Creator-Name {
+  margin-left: 80px;
+  margin-top: -50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.Date {
+  margin-left: 80px;
+  font-family: "Roboto", sans-serif;
+  color: grey;
+}
+
+@media (max-width: 1200px) {
+  .Body-Text {
+    font-size: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Title {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  .Text-Container {
+    padding: 25px 0px 50px 0px;
+    background-color: white;
+  }
+
+  .Slider {
+    position: relative;
+    height: 80vw;
+    max-height: 40vh;
+  }
+
+  .Slider {
+    position: relative;
+    height: 80vw;
+    width: 100vw;
+    max-height: 40vh;
+  }
+
+  .Slider-Item {
+    height: 80vw;
+    width: 100vw;
+    max-height: 40vh;
+  }
+
+  .Slider-Image {
+    height: 80vw;
+    width: 100vw;
+    max-height: 40vh;
+  }
+
+  .Scrollable {
+    height: 70vh;
+    width: 100vw;
+    left: 0;
   }
 }
